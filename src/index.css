@@ -6,7 +6,7 @@
   --background-color: hsl(240deg 4% 9.8%);
 
   --primary-text-color: white;
-  --secondary-text-color: grey;
+  --secondary-text-color: rgb(151, 151, 151);
 
   --border-color:rgba(128, 128, 128, 0.1);
 
@@ -14,6 +14,7 @@
   --fw-medium: 500;
   --fw-midlight: 400;
   --fw-light: 300;
+  --fw-ulight:200;
 }
 
 body {
