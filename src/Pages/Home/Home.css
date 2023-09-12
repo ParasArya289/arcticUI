@@ -1,6 +1,17 @@
 main {
   text-align: center;
 }
+main > button {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--primary-color);
+}
 .page1,
 .page2 {
   min-height: 100vh;
@@ -52,6 +63,11 @@ main {
   cursor: pointer;
   animation: jump 0.6s ease-in-out infinite alternate;
 }
+main button:hover {
+  color: var(--accent-color);
+  transition: all 0.2s ease;
+}
+
 @keyframes jump {
   100% {
     transform: translate(-50%, -70%);
