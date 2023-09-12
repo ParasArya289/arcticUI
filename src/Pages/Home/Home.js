@@ -1,6 +1,18 @@
+import { useRef } from "react";
 import { BsChevronDoubleDown } from "react-icons/bs";
+import { BiSolidChevronUpCircle } from "react-icons/bi";
 import "./Home.css";
 export const Home = () => {
+  const page2ref = useRef(null);
+
+  const scrollToSecondPage = () => {
+    page2ref.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <main>
       <section className="page1">
@@ -17,11 +29,14 @@ export const Home = () => {
           <button>Get started</button>
           <button>Preview</button>
         </div>
-        <button>
+        <button onClick={scrollToSecondPage}>
           <BsChevronDoubleDown />
         </button>
       </section>
-      <section className="page2"></section>
+      <section ref={page2ref} className="page2"></section>
+      <button onClick={scrollToTop}>
+        <BiSolidChevronUpCircle />
+      </button>
     </main>
   );
 };
