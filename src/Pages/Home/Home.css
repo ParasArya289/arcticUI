@@ -1,16 +1,39 @@
+main {
+  text-align: center;
+}
 .page1,
 .page2 {
   min-height: 100vh;
+  padding: 20px;
   background-position: center;
   background-repeat: no-repeat;
   background-origin: center;
 }
 .page1 {
   position: relative;
+  display: grid;
+  place-content: center;
   background-image: url("/public/background1.svg");
   background-size: cover;
 }
 .page2 {
   background-image: url("/public/background2.svg");
   background-size: contain;
+}
+
+.page1 h1 {
+  font-size: 4rem;
+  margin: 0;
+  font-weight: var(--fw-light);
+}
+
+.page1 p:nth-child(2) {
+  font-size: 2.5rem;
+  margin: 0;
+  font-weight: var(--fw-ulight);
+}
+.page1 p:nth-child(3) {
+  font-size: 1.2rem;
+  font-weight: var(--fw-light);
+  color: var(--secondary-text-color);
 }
