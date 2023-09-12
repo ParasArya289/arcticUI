@@ -1,0 +1,16 @@
+.page1,
+.page2 {
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-origin: center;
+}
+.page1 {
+  position: relative;
+  background-image: url("/public/background1.svg");
+  background-size: cover;
+}
+.page2 {
+  background-image: url("/public/background2.svg");
+  background-size: contain;
+}
