@@ -4,6 +4,7 @@ import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
 import "./Carousel.css";
 import { Alert } from "../../ComponentLibrary/Alert/Alert";
 import { Avatar } from "../../ComponentLibrary/Avatar/Avatar";
+import { Badge } from "../../ComponentLibrary/Badge/Badge";
 
 export const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -16,7 +17,14 @@ export const Carousel = () => {
       name="david"
       src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     />,
-    "thhree",
+    <Avatar
+      fallback="D"
+      size="lg"
+      name="david"
+      src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    >
+      <Badge variant="info" size="sm" text="4+" />
+    </Avatar>,
     "four",
     "five",
   ];
