@@ -1,0 +1,10 @@
+.componentCard {
+  min-width: 25rem;
+  min-height: 25rem;
+  border-radius: 12px;
+  display: grid;
+  place-content: center;
+  background-color: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color);
+}
