@@ -1,16 +1,25 @@
+.light {
+  background-color: #fafafa;
+  border: 1px solid #a3a3a3;
+  color: black;
+}
+.dark {
+  background-color: #171717;
+  border: 1px solid #262626;
+}
 .info {
-    background-color: #0c4a6e;
-    border: 1px solid #0284c7;
-  }
-  .success {
-    background-color: #064e3b;
-    border: 1px solid #059669;
-  }
-  .danger {
-    background-color: #7f1d1d;
-    border: 1px solid #dc2626;
-  }
-  .warning {
-    background-color: #713f12;
-    border: 1px solid #ca8a04;
-  }
+  background-color: #0c4a6e;
+  border: 1px solid #0284c7;
+}
+.success {
+  background-color: #064e3b;
+  border: 1px solid #059669;
+}
+.danger {
+  background-color: #7f1d1d;
+  border: 1px solid #dc2626;
+}
+.warning {
+  background-color: #713f12;
+  border: 1px solid #ca8a04;
+}
