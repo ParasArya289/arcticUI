@@ -28,14 +28,14 @@ export const Home = () => {
         </p>
         <div>
           <button>Get started</button>
-          <button>Preview</button>
+          <button onClick={scrollToSecondPage}>Preview</button>
         </div>
         <button onClick={scrollToSecondPage}>
           <BsChevronDoubleDown />
         </button>
       </section>
       <section ref={page2ref} className="page2">
-        <Carousel/>
+        <Carousel />
       </section>
       <button onClick={scrollToTop}>
         <BiSolidChevronUpCircle />
