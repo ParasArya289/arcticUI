@@ -8,7 +8,7 @@ export const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const carouselRef = useRef(null);
   const components = [
-    <Alert variant="info" text="Opps! something went wrong" />,
+    <Alert variant="info" text="oops something went wrong"/>,
     "two",
     "thhree",
     "four",
