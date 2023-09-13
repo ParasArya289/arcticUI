@@ -7,7 +7,13 @@ export const Navbar = () => {
       <Link>Arctic</Link>
       <div>
         <NavLink to="/component">Component</NavLink>
-        <NavLink to="/docs">Documentation</NavLink>
+        <NavLink to="/docs">Docs</NavLink>
+        <a
+          href="https://github.com/ParasArya289/css_component_library"
+          target="_blank"
+        >
+          Github
+        </a>
       </div>
     </nav>
   );
