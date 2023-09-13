@@ -1,0 +1,32 @@
+.carousel {
+  position: relative;
+  overflow-x: hidden;
+  width: 90vw;
+}
+.list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  transition: transform 0.3s ease;
+}
+.carousel > button:nth-child(1) {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0%, -50%);
+}
+.carousel > button:nth-child(3) {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0%, -50%);
+}
+.carousel > button {
+  z-index: 2;
+  border: none;
+  background-color: transparent;
+  color: var(--border-color);
+  font-size: 3rem;
+}
