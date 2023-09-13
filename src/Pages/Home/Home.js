@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { BsChevronDoubleDown } from "react-icons/bs";
 import { BiSolidChevronUpCircle } from "react-icons/bi";
 import "./Home.css";
+import { Carousel } from "../../Components/Carousel/Carousel";
 export const Home = () => {
   const page2ref = useRef(null);
 
@@ -33,7 +34,9 @@ export const Home = () => {
           <BsChevronDoubleDown />
         </button>
       </section>
-      <section ref={page2ref} className="page2"></section>
+      <section ref={page2ref} className="page2">
+        <Carousel/>
+      </section>
       <button onClick={scrollToTop}>
         <BiSolidChevronUpCircle />
       </button>
