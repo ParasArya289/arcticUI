@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Avatar.css";
 
-export const Avatar = ({ src, name, fallback, size = "md" }) => {
+export const Avatar = ({ src, name, fallback, size = "md", children }) => {
   const [loading, setLoading] = useState(true);
 
   const avatarSize = {
@@ -29,6 +29,7 @@ export const Avatar = ({ src, name, fallback, size = "md" }) => {
         height={avatarSize[size]}
       />
       {(!src || loading) && <p>{fallback}</p>}
+      <div className="avatar__badge">{children}</div>
     </div>
   );
 };
