@@ -57,6 +57,7 @@ main > button {
   padding: 20px;
   font-size: medium;
   margin-inline: 10px;
+  margin-top: 40px;
 }
 
 .page1 > button {
