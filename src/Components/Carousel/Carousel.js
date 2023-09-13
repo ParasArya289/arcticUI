@@ -3,13 +3,19 @@ import { ComponentCard } from "../ComponentCard/ComponentCard";
 import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
 import "./Carousel.css";
 import { Alert } from "../../ComponentLibrary/Alert/Alert";
+import { Avatar } from "../../ComponentLibrary/Avatar/Avatar";
 
 export const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const carouselRef = useRef(null);
   const components = [
-    <Alert variant="info" text="oops something went wrong"/>,
-    "two",
+    <Alert variant="info" text="oops something went wrong" />,
+    <Avatar
+      fallback="D"
+      size="lg"
+      name="david"
+      src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    />,
     "thhree",
     "four",
     "five",
