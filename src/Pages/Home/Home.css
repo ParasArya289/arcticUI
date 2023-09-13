@@ -74,6 +74,11 @@ main > button {
   animation: jump 0.6s ease-in-out infinite alternate;
 }
 
+.page2{
+  display: grid;
+  place-content: center;
+}
+
 main button:hover {
   color: var(--secondary-text-color);
   transition: all 0.2s ease;
