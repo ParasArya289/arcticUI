@@ -1,9 +1,9 @@
 import "./ComponentCard.css";
 
-export const ComponentCard = (component) => {
+export const ComponentCard = ({component}) => {
   return (
     <div className="componentCard">
-      Three
+      {component}
     </div>
   );
 };
