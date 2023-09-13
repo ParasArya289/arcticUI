@@ -80,7 +80,7 @@ main > button {
   place-content: center;
 }
 
-main button:hover {
+main > button:hover {
   color: var(--secondary-text-color);
   transition: all 0.2s ease;
 }
