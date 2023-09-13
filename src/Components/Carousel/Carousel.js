@@ -2,11 +2,18 @@ import { useRef, useState } from "react";
 import { ComponentCard } from "../ComponentCard/ComponentCard";
 import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
 import "./Carousel.css";
+import { Alert } from "../../ComponentLibrary/Alert/Alert";
 
 export const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const carouselRef = useRef(null);
-  const components = ["one", "two", "thhree", "four", "five"];
+  const components = [
+    <Alert variant="info" text="Opps! something went wrong" />,
+    "two",
+    "thhree",
+    "four",
+    "five",
+  ];
 
   const handleNext = () => {
     if (currentIndex < components.length - 1) {
