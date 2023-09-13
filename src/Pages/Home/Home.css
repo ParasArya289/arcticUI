@@ -48,6 +48,16 @@ main > button {
   font-weight: var(--fw-light);
   color: var(--secondary-text-color);
 }
+.page1 > div button {
+  background-color: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(4px);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  color: white;
+  padding: 20px;
+  font-size: medium;
+  margin-inline: 10px;
+}
 
 .page1 > button {
   position: absolute;
@@ -63,8 +73,9 @@ main > button {
   cursor: pointer;
   animation: jump 0.6s ease-in-out infinite alternate;
 }
+
 main button:hover {
-  color: var(--accent-color);
+  color: var(--secondary-text-color);
   transition: all 0.2s ease;
 }
 
