@@ -1,0 +1,22 @@
+.horizontalCard {
+  width: 22rem;
+  height: 7rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  justify-content: space-between;
+}
+.horizontalCard__content {
+  padding-block: 5px;
+}
+
+.horizontalCard > img {
+  border-radius: 12px 0 0px 12px;
+}
+
+.horizontalCard > img {
+  width: 30%;
+  height: 100%;
+  object-fit: cover;
+}
