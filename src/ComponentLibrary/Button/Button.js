@@ -9,6 +9,7 @@ export const Button = ({
   text,
   size = "md",
   href,
+  children,
 }) => {
   return (
     <Fragment>
@@ -21,7 +22,8 @@ export const Button = ({
           type={type}
           className={`button ${size} ${styles[variant]} ${className}`}
         >
-          {text}
+          {children && <span>{children}</span>}
+          {text && <p>{text}</p>}
         </button>
       )}
     </Fragment>
