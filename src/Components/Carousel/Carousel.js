@@ -14,6 +14,7 @@ import { Image } from "../../ComponentLibrary/Image/Image";
 import { Heading } from "../../ComponentLibrary/Heading/Heading";
 import { Text } from "../../ComponentLibrary/Text/Text";
 import { TextOverlay } from "../../ComponentLibrary/TextOverlay/TextOverlay";
+import { HorizontalCard } from "../../ComponentLibrary/HorizontalCard/HorizontalCard";
 
 export const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -77,6 +78,17 @@ export const Carousel = () => {
       </Text>
       <Button text="Check out" size="md" variant="info" />
     </TextOverlay>,
+    <HorizontalCard
+      src="https://images.pexels.com/photos/1647220/pexels-photo-1647220.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      variant="dark"
+    >
+      <Heading size="medium" textAlign="left">
+        Arctic UI
+      </Heading>
+      <Text size="smaller" textAlign="left">
+        Core building blocks for your design system
+      </Text>
+    </HorizontalCard>,
   ];
 
   const handleNext = () => {
