@@ -5,6 +5,9 @@ import "./Carousel.css";
 import { Alert } from "../../ComponentLibrary/Alert/Alert";
 import { Avatar } from "../../ComponentLibrary/Avatar/Avatar";
 import { Badge } from "../../ComponentLibrary/Badge/Badge";
+import { Button } from "../../ComponentLibrary/Button/Button";
+import { FloatingActionButton } from "../../ComponentLibrary/FloatingActionButton/FloatingActionButton";
+import { FiFolderPlus } from "react-icons/fi";
 
 export const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -25,7 +28,18 @@ export const Carousel = () => {
     >
       <Badge variant="info" size="sm" text="4+" />
     </Avatar>,
-    "four",
+    <Button text="Button" size="md" variant="info" />,
+    <FloatingActionButton
+    // text="Add"
+      top="50%"
+      left="50%"
+      size="lg"
+      variant="info"
+      translateX="-50%"
+      translateY="-50%"
+    >
+      <FiFolderPlus />
+    </FloatingActionButton>,
     "five",
   ];
 
