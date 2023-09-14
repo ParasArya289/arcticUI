@@ -1,0 +1,27 @@
+.textOverlay {
+  position: relative;
+  width: 16rem;
+  height: 19rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+.textOverlay > img,
+.textOverlay {
+  border-radius: 4px;
+}
+
+.textOverlay > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.textOverlay__content {
+  position: absolute;
+  bottom: 0;
+}
+
+.textOverlay__content > p,
+.textOverlay__content > h1,
+.textOverlay__content > button {
+  margin: 10px;
+}
