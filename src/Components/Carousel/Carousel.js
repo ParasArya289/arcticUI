@@ -9,6 +9,10 @@ import { Button } from "../../ComponentLibrary/Button/Button";
 import { FloatingActionButton } from "../../ComponentLibrary/FloatingActionButton/FloatingActionButton";
 import { FiFolderPlus } from "react-icons/fi";
 import { HiOutlineSquare2Stack } from "react-icons/hi2";
+import { Card } from "../../ComponentLibrary/Card/Card";
+import { Image } from "../../ComponentLibrary/Image/Image";
+import { Heading } from "../../ComponentLibrary/Heading/Heading";
+import { Text } from "../../ComponentLibrary/Text/Text";
 
 export const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -43,7 +47,26 @@ export const Carousel = () => {
     >
       <FiFolderPlus />
     </FloatingActionButton>,
-    "five",
+    <Card variant="dark">
+      <Image
+        src={
+          "https://images.pexels.com/photos/1647220/pexels-photo-1647220.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        }
+        fallback={
+          "https://zhulian.com/wp-content/uploads/2023/03/fallback-image.webp"
+        }
+        alt="arctic"
+        borderRadius={"4px 4px 0 0 "}
+        aspectRatio={"16/9"}
+      />
+      <Heading size="large" textAlign="left">
+        Arctic UI
+      </Heading>
+      <Text size="medium" textAlign="left">
+        Core building blocks for your design system
+      </Text>
+      <Button text="Check out" size="md" variant="info" />
+    </Card>,
   ];
 
   const handleNext = () => {
