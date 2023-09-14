@@ -8,7 +8,7 @@ import { Badge } from "../../ComponentLibrary/Badge/Badge";
 import { Button } from "../../ComponentLibrary/Button/Button";
 import { FloatingActionButton } from "../../ComponentLibrary/FloatingActionButton/FloatingActionButton";
 import { FiFolderPlus } from "react-icons/fi";
-import { BiCoinStack } from "react-icons/bi";
+import { HiOutlineSquare2Stack } from "react-icons/hi2";
 
 export const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -30,7 +30,7 @@ export const Carousel = () => {
       <Badge variant="info" size="sm" text="4+" />
     </Avatar>,
     <Button text="Button" size="md" variant="info">
-      <BiCoinStack />
+      <HiOutlineSquare2Stack />
     </Button>,
     <FloatingActionButton
       // text="Add"
