@@ -1,0 +1,9 @@
+.card {
+  width: 16rem;
+  border-radius: 4px;
+}
+.card > p,
+.card > h1,
+.card > button {
+  margin: 10px;
+}
