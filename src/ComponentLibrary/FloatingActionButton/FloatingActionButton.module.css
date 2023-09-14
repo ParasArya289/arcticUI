@@ -1,0 +1,30 @@
+.floatingActionButton {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 99999px;
+  gap:10px;
+  padding: 15px;
+  cursor: pointer;
+}
+.floatingActionButton:is(:hover, ) {
+  filter: brightness(0.7);
+  transition: filter 0.2s ease;
+}
+
+.sm {
+  min-width: 2.5rem;
+  min-height: 2.5rem;
+  font-size: 1rem;
+}
+.md {
+  min-width: 3.5rem;
+  min-height: 3.5rem;
+  font-size: 1.2rem;
+}
+.lg {
+  min-width: 4.5rem;
+  min-height: 4.5rem;
+  font-size: 1.4rem;
+}
