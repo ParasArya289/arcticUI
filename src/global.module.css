@@ -1,10 +1,10 @@
 .light {
   background-color: #fafafa;
   border: 1px solid #a3a3a3;
-  color: black;
+  color: #292524;
 }
 .dark {
-  background-color: #171717;
+  background-color: #27272a;
   border: 1px solid #262626;
   color: white;
 }
