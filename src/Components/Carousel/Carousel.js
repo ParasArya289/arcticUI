@@ -89,6 +89,13 @@ export const Carousel = () => {
         Core building blocks for your design system
       </Text>
     </HorizontalCard>,
+    <Image
+      src="https://images.pexels.com/photos/1009136/pexels-photo-1009136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      alt="arctic"
+      height="286"
+      width="180"
+      rounded
+    />,
   ];
 
   const handleNext = () => {
