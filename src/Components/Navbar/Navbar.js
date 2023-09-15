@@ -6,7 +6,7 @@ export const Navbar = () => {
     <nav className="navbar">
       <Link>Arctic</Link>
       <div>
-        <NavLink to="/component">Component</NavLink>
+        <NavLink to="/components">Component</NavLink>
         <NavLink to="/docs">Docs</NavLink>
         <a
           href="https://github.com/ParasArya289/css_component_library"
