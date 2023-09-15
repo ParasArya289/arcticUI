@@ -1,0 +1,18 @@
+.sidebar {
+  position: sticky;
+  top: 100px;
+  padding-inline: 20px;
+}
+.sidebar > a {
+  display: block;
+  text-decoration: none;
+  color: var(--primary-text-color);
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+.sidebar > p:hover {
+}
+.sidebar .active {
+  color: var(--secondary-text-color);
+}
