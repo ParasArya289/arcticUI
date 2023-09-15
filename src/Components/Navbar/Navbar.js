@@ -7,7 +7,7 @@ export const Navbar = () => {
   const navbarRef = useRef(null);
 
   const handleScroll = () => {
-    if (window.scrollY >= 100) {
+    if (window.scrollY >= 50) {
       navbarRef.current.classList.add("navbar__scrolled");
     } else {
       navbarRef.current.classList.remove("navbar__scrolled");
@@ -29,7 +29,7 @@ export const Navbar = () => {
       </Link>
       <div>
         <NavLink to="/components">Component</NavLink>
-        <NavLink to="/docs">Docs</NavLink>
+        <NavLink to="/docs/Alert">Docs</NavLink>
         <a
           href="https://github.com/ParasArya289/css_component_library"
           target="_blank"
