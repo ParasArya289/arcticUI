@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { BsFillTriangleFill } from "react-icons/bs";
 import "./Navbar.css";
 
 export const Navbar = () => {
@@ -22,7 +23,10 @@ export const Navbar = () => {
 
   return (
     <nav ref={navbarRef} className="navbar">
-      <Link to="./">Arctic</Link>
+      <Link to="./">
+        <BsFillTriangleFill />
+        Arctic
+      </Link>
       <div>
         <NavLink to="/components">Component</NavLink>
         <NavLink to="/docs">Docs</NavLink>
