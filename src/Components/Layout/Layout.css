@@ -1,0 +1,13 @@
+.layout {
+  margin-block: 100px;
+  display: flex;
+}
+.layout__sidebar {
+  flex-basis: 20%;
+}
+.layout__children {
+  flex-basis: 80%;
+  padding-inline: 20px;
+  display: grid;
+  place-content: center;
+}
