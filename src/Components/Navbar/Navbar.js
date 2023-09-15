@@ -1,9 +1,27 @@
+import { useEffect, useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 export const Navbar = () => {
+  const navbarRef = useRef(null);
+
+  const handleScroll = () => {
+    if (window.scrollY >= 100) {
+      navbarRef.current.classList.add("navbar__scrolled");
+    } else {
+      navbarRef.current.classList.remove("navbar__scrolled");
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [navbarRef]);
+
   return (
-    <nav className="navbar">
+    <nav ref={navbarRef} className="navbar">
       <Link to="./">Arctic</Link>
       <div>
         <NavLink to="/components">Component</NavLink>
