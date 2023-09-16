@@ -15,9 +15,9 @@ export const Image = ({
       className="image"
       src={src || fallback}
       alt={alt}
-      height={height}
-      width={width}
       style={{
+        width,
+        height,
         aspectRatio: rounded ? "1/1" : aspectRatio,
         borderRadius: rounded ? "999999px" : borderRadius,
       }}
