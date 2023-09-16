@@ -10,6 +10,7 @@ import { ButtonDoc } from "./Pages/Docs/ButtonDoc/ButtonDoc";
 import { CardDoc } from "./Pages/Docs/CardDoc/CardDoc";
 import { Docs } from "./Pages/Docs/Docs";
 import { FloatingActionButtonDoc } from "./Pages/Docs/FloatingActionButtonDoc/FloatingActionButtonDoc";
+import { HorizontaCardDoc } from "./Pages/Docs/HorizontalCardDoc/HorizontalCardDoc";
 import { TextOverlayDoc } from "./Pages/Docs/TextOverlayDoc/TextOverlayDoc";
 import { Home } from "./Pages/Home/Home";
 
@@ -30,6 +31,7 @@ function App() {
         />
         <Route path="/docs/Card" element={<CardDoc />} />
         <Route path="/docs/Text Overlay" element={<TextOverlayDoc />} />
+        <Route path="/docs/Horizontal Card" element={<HorizontaCardDoc />} />
       </Routes>
     </div>
   );
