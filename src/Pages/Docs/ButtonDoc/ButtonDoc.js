@@ -22,7 +22,7 @@ export const ButtonDoc = () => {
   return (
     <Layout>
       <div className="docs__main">
-        <Heading>Badge</Heading>
+        <Heading>Button</Heading>
         <p className="docs__description">
           Buttons are available with six different variants, available in size
           sm, md, lg. Can be used with icons.
