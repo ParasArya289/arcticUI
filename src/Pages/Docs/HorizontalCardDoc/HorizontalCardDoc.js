@@ -26,7 +26,7 @@ export const HorizontaCardDoc = () => {
   return (
     <Layout>
       <div className="docs__main">
-        <Heading>Text Overlay</Heading>
+        <Heading>Horizontal Card</Heading>
         <p className="docs__description">
           Horizontal Cards are available in six different variants. Can be used
           with/without Text, Heading, Button, Badge components available on
