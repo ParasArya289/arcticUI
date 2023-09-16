@@ -7,6 +7,7 @@ import { AvatarDoc } from "./Pages/Docs/AvatarDoc/AvatarDoc";
 import { BadgeDoc } from "./Pages/Docs/BadgeDoc/BadgeDoc";
 import { ButtonDoc } from "./Pages/Docs/ButtonDoc/ButtonDoc";
 import { Docs } from "./Pages/Docs/Docs";
+import { FloatingActionButtonDoc } from "./Pages/Docs/FloatingActionButtonDoc/FloatingActionButtonDoc";
 import { Home } from "./Pages/Home/Home";
 
 function App() {
@@ -20,6 +21,10 @@ function App() {
         <Route path="/docs/Avatar" element={<AvatarDoc />} />
         <Route path="/docs/Badge" element={<BadgeDoc />} />
         <Route path="/docs/Button" element={<ButtonDoc />} />
+        <Route
+          path="/docs/Floating Action Button"
+          element={<FloatingActionButtonDoc />}
+        />
       </Routes>
     </div>
   );
