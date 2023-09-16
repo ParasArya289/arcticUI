@@ -1,0 +1,18 @@
+.docs__preview {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.docs__main {
+  max-width: 80%;
+}
+.docs__description {
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: medium;
+}
+.docs__preview {
+  margin-block: 30px;
+}
+
