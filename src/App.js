@@ -1,13 +1,16 @@
 import { Route, Routes } from "react-router";
 import "./App.css";
+import { TextOverlay } from "./ComponentLibrary/TextOverlay/TextOverlay";
 import { Navbar } from "./Components/Navbar/Navbar";
 import { Components } from "./Pages/Components/Components";
 import { AlertDoc } from "./Pages/Docs/AlertDoc/AlertDoc";
 import { AvatarDoc } from "./Pages/Docs/AvatarDoc/AvatarDoc";
 import { BadgeDoc } from "./Pages/Docs/BadgeDoc/BadgeDoc";
 import { ButtonDoc } from "./Pages/Docs/ButtonDoc/ButtonDoc";
+import { CardDoc } from "./Pages/Docs/CardDoc/CardDoc";
 import { Docs } from "./Pages/Docs/Docs";
 import { FloatingActionButtonDoc } from "./Pages/Docs/FloatingActionButtonDoc/FloatingActionButtonDoc";
+import { TextOverlayDoc } from "./Pages/Docs/TextOverlayDoc/TextOverlayDoc";
 import { Home } from "./Pages/Home/Home";
 
 function App() {
@@ -25,6 +28,8 @@ function App() {
           path="/docs/Floating Action Button"
           element={<FloatingActionButtonDoc />}
         />
+        <Route path="/docs/Card" element={<CardDoc />} />
+        <Route path="/docs/Text Overlay" element={<TextOverlayDoc />} />
       </Routes>
     </div>
   );
