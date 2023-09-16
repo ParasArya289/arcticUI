@@ -9,6 +9,7 @@ export const FloatingActionButton = ({
   translateX,
   translateY,
   className,
+  style,
   children,
   size = "md",
   variant = "dark",
@@ -22,6 +23,7 @@ export const FloatingActionButton = ({
         left,
         right,
         transform: `translate(${translateX}, ${translateY})`,
+        ...style,
       }}
     >
       {children && <span>{children}</span>}
