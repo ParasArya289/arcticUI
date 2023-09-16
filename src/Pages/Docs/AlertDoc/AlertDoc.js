@@ -6,7 +6,11 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import { nightOwl } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 export const AlertDoc = () => {
-  const codeString = `<Alert variant="info" text="Oops something went wrong" />`;
+  const codeString = `
+  
+  <Alert variant="info" text="Oops something went wrong" />
+  
+  `;
   return (
     <Layout>
       <div className="docs__main">
