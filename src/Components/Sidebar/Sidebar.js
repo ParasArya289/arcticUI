@@ -8,6 +8,8 @@ export const Sidebar = () => {
       {components.map(({ name }) => (
         <NavLink to={"/docs/" + name}>{name}</NavLink>
       ))}
+      <NavLink to={"/docs/Heading"}>Heading</NavLink>
+      <NavLink to={"/docs/Text"}>Text</NavLink>
     </div>
   );
 };
