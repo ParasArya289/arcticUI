@@ -45,8 +45,8 @@ export const Carousel = () => {
     };
   }, [setIsVisible]);
 
-  const transformValue = `translateX(-${410 * currentIndex}px)`;
-  
+  const transformValue = `translateX(-${400 * currentIndex}px)`;
+
   return (
     <div className="carousel">
       <button onClick={handlePrevious}>
