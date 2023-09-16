@@ -6,7 +6,7 @@ export const ComponentCard = ({ component,lastRef }) => {
   const navigate = useNavigate();
   const navigateHandler = (e) => {
     e.stopPropagation();
-    navigate("./docs/" + component.name);
+    navigate("/docs/" + component.name);
   };
   return (
     <div>
