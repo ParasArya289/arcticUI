@@ -1,6 +1,6 @@
 .componentCard {
-  min-width: 25rem;
-  min-height: 25rem;
+  min-width: 400px;
+  min-height: 400px;
   border-radius: 12px;
   margin-bottom: 10px;
   display: grid;
@@ -13,4 +13,9 @@
 }
 .componentCard:hover {
   background-color: rgba(255, 255, 255, 0.02);
+}
+@media (max-width: 600px) {
+  .componentCard {
+    min-width: 390px;
+  }
 }
