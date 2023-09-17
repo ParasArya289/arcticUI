@@ -125,7 +125,8 @@ export const components = [
       <Image
         src="https://images.pexels.com/photos/1009136/pexels-photo-1009136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         alt="arctic"
-        height="286px"
+        height="250px"
+        width="250px"
         rounded
       />
     ),
