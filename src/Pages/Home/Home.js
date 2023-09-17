@@ -3,8 +3,10 @@ import { BsChevronDoubleDown } from "react-icons/bs";
 import { BiSolidChevronUpCircle } from "react-icons/bi";
 import "./Home.css";
 import { Carousel } from "../../Components/Carousel/Carousel";
+import { useNavigate } from "react-router-dom";
 export const Home = () => {
   const page2ref = useRef(null);
+  const navigate = useNavigate();
 
   const scrollToSecondPage = () => {
     page2ref.current.scrollIntoView({ behavior: "smooth" });
@@ -27,7 +29,7 @@ export const Home = () => {
           <br /> for high-quality web apps and design systems.
         </p>
         <div>
-          <button>Get started</button>
+          <button onClick={()=>navigate("/docs/Alert")}>Get started</button>
           <button onClick={scrollToSecondPage}>Preview</button>
         </div>
         <button onClick={scrollToSecondPage}>
