@@ -54,12 +54,11 @@ export const components = [
     component: (
       <FloatingActionButton
         // text="Add"
-        top="50%"
-        left="50%"
+        style={{ position: "unset" }}
+        translateX={0}
+        translateY={0}
         size="lg"
         variant="info"
-        translateX="-50%"
-        translateY="-50%"
       >
         <FiFolderPlus />
       </FloatingActionButton>
