@@ -17,7 +17,13 @@ export const ButtonDoc = () => {
     <HiOutlineSquare2Stack />
   </Button>
   
+
+  `;
+  const codeString2 = ` 
+  //Button with link
   
+  <Button text="Link" href="#"/>
+
   `;
   return (
     <Layout>
@@ -28,6 +34,13 @@ export const ButtonDoc = () => {
           sm, md, lg. Can be used with icons.
         </p>
         <div className="docs__preview">
+          <Button text="Button" size="md" variant="info"></Button>
+          <Button text="Button" size="md" variant="success"></Button>
+          <Button text="Button" size="md" variant="warning"></Button>
+          <Button text="Button" size="md" variant="danger"></Button>
+          <Button text="Button" size="md" variant="dark"></Button>
+          <Button text="Button" size="md" variant="light"></Button>
+          <div style={{ width: "100%" }} />
           <Button text="Button" size="md" variant="info">
             <HiOutlineSquare2Stack />
           </Button>
@@ -51,6 +64,28 @@ export const ButtonDoc = () => {
           <Heading size={"large"}>How to use</Heading>
           <SyntaxHighlighter language="jsx" style={nightOwl}>
             {codeString}
+          </SyntaxHighlighter>
+        </div>
+        <div className="docs__main">
+          <Heading>Link</Heading>
+          <p className="docs__description">
+            Button component can be transformed into link if used with "href"
+            attribute.
+          </p>
+        </div>
+        <div className="docs__preview">
+          <Button text={"Link"} href="#" />
+          <Button text={"Link"} href="#" />
+          <Button text={"Link"} href="#" />
+          <Button text={"Link"} href="#" />
+          <Button text={"Link"} href="#" />
+          <Button text={"Link"} href="#" />
+          <Button text={"Link"} href="#" />
+        </div>
+        <div className="docs__demo">
+          <Heading size={"large"}>How to use</Heading>
+          <SyntaxHighlighter language="jsx" style={nightOwl}>
+            {codeString2}
           </SyntaxHighlighter>
         </div>
       </div>
