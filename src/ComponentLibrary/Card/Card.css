@@ -2,6 +2,9 @@
   position: relative;
   width: 16rem;
   border-radius: 4px;
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 .card > p,
 .card > h1,
@@ -18,7 +21,7 @@
   backdrop-filter: blur(10px);
   --webkit-backdrop-filter: blur(10px);
   padding: 4px;
-  border:1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
@@ -27,5 +30,5 @@
 }
 .card[data-dismiss="true"] {
   opacity: 0;
-  transition: opacity 0.2s ease;
+  transform: scale(0.7);
 }
