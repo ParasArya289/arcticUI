@@ -1,4 +1,5 @@
 .card {
+  position: relative;
   width: 16rem;
   border-radius: 4px;
 }
@@ -6,4 +7,24 @@
 .card > h1,
 .card > button {
   margin: 10px;
+}
+.card svg {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 9999px;
+  backdrop-filter: blur(10px);
+  --webkit-backdrop-filter: blur(10px);
+  padding: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.card svg:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.card[data-dismiss="true"]{
+  opacity:0;
+  transition:opacity 0.4s ease;
 }
