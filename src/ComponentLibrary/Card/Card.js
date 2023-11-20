@@ -23,7 +23,7 @@ export const Card = ({
         if (dismiss === true) {
           setAnimateOut(true);
         }
-      }, animate?500:0);
+      }, animate?300:0);
     return () => {
       clearTimeout(timeoutId);
     };
