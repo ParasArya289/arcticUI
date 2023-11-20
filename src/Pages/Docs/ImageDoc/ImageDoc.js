@@ -2,13 +2,19 @@ import { Heading } from "../../../ComponentLibrary/Heading/Heading";
 import { Layout } from "../../../Components/Layout/Layout";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { nightOwl } from "react-syntax-highlighter/dist/esm/styles/hljs";
-import { TextOverlay } from "../../../ComponentLibrary/TextOverlay/TextOverlay";
-import { Text } from "../../../ComponentLibrary/Text/Text";
-import { Button } from "../../../ComponentLibrary/Button/Button";
 import { Image } from "../../../ComponentLibrary/Image/Image";
 
 export const ImageDoc = () => {
   const codeString = ` 
+
+        //Responsive image with aspect ratio and border radius
+
+        <Image
+        src="imgSrcUlr"
+        alt="arctic"
+        borderRadius="12px"
+        aspectRatio="16/9"
+        />
 
         //With aspect ratio and border radius
 
@@ -37,9 +43,15 @@ export const ImageDoc = () => {
       <div className="docs__main">
         <Heading>Image</Heading>
         <p className="docs__description">
-          Image are available, supports aspectRatio and can be rounded.
+          Image component is responsive by design if not given width and height, supports aspect ratio and can be rounded.
         </p>
         <div className="docs__preview" style={{ gap: "30px" }}>
+          <Image
+            src="https://images.pexels.com/photos/1009136/pexels-photo-1009136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="arctic"
+            borderRadius="12px"
+            aspectRatio="16/9"
+          />
           <Image
             src="https://images.pexels.com/photos/1009136/pexels-photo-1009136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt="arctic"
