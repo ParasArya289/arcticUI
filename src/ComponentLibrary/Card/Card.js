@@ -28,7 +28,6 @@ export const Card = ({
       clearTimeout(timeoutId);
     };
   }, [dismiss]);
-  console.log(animate)
 
   return (
     <>
