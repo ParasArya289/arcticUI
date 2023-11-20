@@ -16,3 +16,8 @@
 .docs__preview {
   margin-block: 30px;
 }
+@media(max-width:1000px){
+  .docs__main{
+    max-width: 100%;
+  }
+}
