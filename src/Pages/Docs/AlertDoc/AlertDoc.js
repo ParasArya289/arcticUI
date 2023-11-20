@@ -16,8 +16,7 @@ export const AlertDoc = () => {
       <div className="docs__main">
         <Heading>Alert</Heading>
         <p className="docs__description">
-          Alerts are available for any length of text, as.For proper styling,
-          use one of the six variants.
+          Alerts are available in six variants "info", "success", "warning", "danger", "light", and "dark". Alerts are dismissable by default, set "dismissable" prop to false to make them not dismissable
         </p>
         <div className="docs__preview">
           <Alert variant="info" text="Oops something went wrong" />
