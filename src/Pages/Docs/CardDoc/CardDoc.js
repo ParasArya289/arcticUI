@@ -58,10 +58,28 @@ export const CardDoc = () => {
   
   
   `;
+  const codeString3 = ` 
+  
+  
+  <Card variant="dark" dismissable aniamteOut>
+
+    <Heading size="large" textAlign="left">
+        Arctic UI
+    </Heading>
+
+    <Text size="medium" textAlign="left">
+        Core building blocks for your design system
+    </Text>
+
+  </Card>
+  
+  
+  `;
   return (
     <Layout>
       <div className="docs__main">
         <Heading>Card</Heading>
+        {/* ---------Card------------ */}
         <p className="docs__description">
           Cards are available with six different variants. Can be used
           with/without Image, Text, Heading, Button, Badge etc components
@@ -200,10 +218,12 @@ export const CardDoc = () => {
             {codeString}
           </SyntaxHighlighter>
         </div>
+         {/* ---------Card with dismiss------------ */}
         <Heading size="large">Card with dismiss</Heading>
         <p className="docs__description">
-          By setting "dismissable" prop to true card will become
-          dismissable. Setting "animateOut" prop to true will make card to animate out on dismiss.
+          By setting "dismissable" prop to true card will become dismissable.
+          Setting "animateOut" prop to true will make card to animate out on
+          dismiss.
         </p>
 
         <div className="docs__preview" style={{ gap: "30px" }}>
@@ -337,6 +357,75 @@ export const CardDoc = () => {
           <Heading size={"large"}>How to use</Heading>
           <SyntaxHighlighter language="jsx" style={nightOwl}>
             {codeString2}
+          </SyntaxHighlighter>
+        </div>
+        {/* ---------Text only card------------ */}
+        <Heading size="large">Text only card</Heading>
+        <p className="docs__description">
+          Card component can be used with multiple combination of Arctic UI's
+          components you can opt to go with "Heading" and "Text" component to
+          form a Text only card component.
+        </p>
+
+        <div className="docs__preview" style={{ gap: "30px" }}>
+          <Card dismissable animateOut variant="info">
+            <Heading size="large" textAlign="left">
+              Arctic UI
+            </Heading>
+            <Text size="medium" textAlign="left">
+              Core building blocks for your design system
+            </Text>
+          </Card>
+
+          <Card dismissable animateOut variant="success">
+            <Heading size="large" textAlign="left">
+              Arctic UI
+            </Heading>
+            <Text size="medium" textAlign="left">
+              Core building blocks for your design system
+            </Text>
+          </Card>
+
+          <Card dismissable animateOut variant="warning">
+            <Heading size="large" textAlign="left">
+              Arctic UI
+            </Heading>
+            <Text size="medium" textAlign="left">
+              Core building blocks for your design system
+            </Text>
+          </Card>
+
+          <Card dismissable animateOut variant="danger">
+            <Heading size="large" textAlign="left">
+              Arctic UI
+            </Heading>
+            <Text size="medium" textAlign="left">
+              Core building blocks for your design system
+            </Text>
+          </Card>
+
+          <Card dismissable animateOut variant="light">
+            <Heading size="large" textAlign="left">
+              Arctic UI
+            </Heading>
+            <Text size="medium" textAlign="left">
+              Core building blocks for your design system
+            </Text>
+          </Card>
+
+          <Card dismissable animateOut variant="dark">
+            <Heading size="large" textAlign="left">
+              Arctic UI
+            </Heading>
+            <Text size="medium" textAlign="left">
+              Core building blocks for your design system
+            </Text>
+          </Card>
+        </div>
+        <div className="docs__demo">
+          <Heading size={"large"}>How to use</Heading>
+          <SyntaxHighlighter language="jsx" style={nightOwl}>
+            {codeString3}
           </SyntaxHighlighter>
         </div>
       </div>
